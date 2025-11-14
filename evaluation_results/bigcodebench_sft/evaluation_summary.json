@@ -1,0 +1,10 @@
+{
+  "pass_at_1": 0.2631578947368421,
+  "total_examples": 114,
+  "correct_examples": 30,
+  "model_path": "./models/qwen_repairity_20250330_011532_alternating_alternating",
+  "base_model": "Qwen/Qwen2.5-Coder-7B-Instruct",
+  "temperature": 0.1,
+  "top_p": 0.75,
+  "num_samples": 1
+}

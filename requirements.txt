@@ -1,0 +1,32 @@
+# Core ML libraries
+torch>=2.0.0
+transformers>=4.30.0
+accelerate>=0.20.0
+datasets>=2.10.0
+numpy>=1.22.0
+pandas>=1.5.0
+
+# Reinforcement learning libraries
+trl>=0.4.5
+peft>=0.4.0
+
+# API and utilities
+anthropic>=0.2.10
+tqdm>=4.65.0
+matplotlib>=3.7.0
+scikit-learn>=1.2.0
+wandb>=0.15.0
+
+# File handling and logging
+jsonlines>=3.1.0
+
+# Potential additional dependencies
+sentencepiece>=0.1.98
+regex>=2022.10.31
+einops>=0.6.0
+tensorboard>=2.12.0
+protobuf>=3.20.0
+
+# CLI utilities
+typer>=0.7.0
+rich>=13.0.0

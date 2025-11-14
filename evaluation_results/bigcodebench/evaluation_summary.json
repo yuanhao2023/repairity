@@ -1,0 +1,10 @@
+{
+  "pass_at_1": 0.20175438596491227,
+  "total_examples": 114,
+  "correct_examples": 23,
+  "model_path": "Qwen/Qwen2.5-Coder-7B-Instruct",
+  "base_model": "Qwen/Qwen2.5-Coder-7B-Instruct",
+  "temperature": 0.1,
+  "top_p": 0.75,
+  "num_samples": 1
+}

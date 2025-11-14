@@ -1,0 +1,32 @@
+#!/usr/bin/env python3
+# check_ppo_config.py
+
+from trl import PPOConfig
+import inspect
+ate REPAIRITY && python src/rl/train_rllf.py --qwen_model models/qwen_repairity_20250330_011532_alternating_alternating --reward_model ./models/binary_reward_model --dataset_path ./data/bigcode-evaluation-data.jsonl --output_dir ./models/preference-ft-qwen-7b --batch_size 2 --ppo_steps 10 --load_in_4bit
+^C
+conda activate REPAIRITY && pip show trl
+^C
+conda activate REPAIRITY && python src/rl/simple_rllf.py --qwen_model models/qwen_repairity_20250330_011532_alternating_alternating --reward_model ./models/binary_reward_model --dataset_path ./data/bigcode-evaluation-data.jsonl --output_dir ./models/preference-ft-qwen-7b --batch_size 2 --load_in_4bit
+
+def main():
+    # Get the signature of PPOConfig.__init__ 
+    sig = inspect.signature(PPOConfig.__init__)
+    
+    # Print the parameters
+    print("PPOConfig parameters:")
+    for param_name, param in sig.parameters.items():
+        if param_name != 'self':
+            print(f"  {param_name}: {param.default}")
+    
+    # Create a simple PPOConfig
+    config = PPOConfig()
+    print("\nDefault PPOConfig attributes:")
+    for attr in dir(config):
+        if not attr.startswith('_'):
+            value = getattr(config, attr)
+            if not callable(value):
+                print(f"  {attr}: {value}")
+
+if __name__ == "__main__":
+    main() 
